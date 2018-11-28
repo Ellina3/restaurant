@@ -146,10 +146,10 @@ ul.menu li a{
 }
 
 .about {
-    background: url("img/aboutbg.jpg") no-repeat center center;
-    background-size: cover;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0,0,0,0.1) 100%), url("img/aboutpattern.png") repeat;
     width: 100%;
     position: relative;
+    box-shadow: inset 0px 0px 35px rgba(0,0,0,0.4);
 }
 
 .about_container{
@@ -246,10 +246,10 @@ ul.menu li a{
 }
 
 .restaurant_menu{
-    background: url("img/menubg.jpg") no-repeat center center;
-    background-size: cover;
+    background: linear-gradient(-44deg, rgba(0, 0, 0, 0) 9%, rgba(0,0,0,0.1) 100%), url("img/menupattern.png") repeat;
     width: 100%;
     position: relative;
+    box-shadow: inset 0px 0px 30px rgba(0,0,0,0.2);
 }
 
 .restaurant_menu_container{
