@@ -12,6 +12,13 @@
             <link rel="stylesheet" href="css/css/fontello-embedded.css" type="text/css"/>
             <link rel="stylesheet" href="css/css/fontello-ie7.css" type="text/css" />
             <link rel="stylesheet" href="css/css/fontello-ie7-codes.css" type="text/css"/>
+            <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+            <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+            <script type="text/javascript" src="css/js/init.js"></script>
+            <script type="text/javascript" src="css/js/localization.js"></script>
+            <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+            <script type="text/javascript" src="css/js/menu.js"></script>
             <title>RESTAURANT</title>
         </head>
         <body>
@@ -25,6 +32,22 @@
                     <div class="logo">
                         <a href="#"><img src="img/logo.png" alt="logo"></a> 
                     </div>
+                    <div class="icon-menu" id="icon-menu">
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <div class="mobile_tablet_menu" id="menu">
+                        <ul class="menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#ingredients">Ingredients</a></li>
+                            <li><a href="#restaurant_menu">Menu</a></li>
+                            <li><a href="#review">Reviews</a></li>
+                            <li><a href="#reservation">Reservations</a></li>
+                        </ul>
+                        <div class="icon-close" id="icon-close">
+                            <i class="fas fa-angle-up"></i>
+                        </div>
+                    </div>
                     <div class="navigation">
                         <ul class="menu">
                             <li><a href="#">Home</a></li>
@@ -32,7 +55,7 @@
                             <li><a href="#ingredients">Ingredients</a></li>
                             <li><a href="#menu">Menu</a></li>
                             <li><a href="#review">Reviews</a></li>
-                            <li><a href="#">Reservations</a></li>
+                            <li><a href="#reservation">Reservations</a></li>
                         </ul>
                     </div>
                     <div class="socialicons">
@@ -50,8 +73,8 @@
                         <img src="img/h2decor.png" alt="decor">
                     </div>
                     <div class="content_buttons">
-                        <a href="#">BOOK A TABLE</a>
-                        <a href="#menu">SEE THE MENU</a>
+                        <a href="#reservation">BOOK A TABLE</a>
+                        <a href="#restaurant_menu">SEE THE MENU</a>
                     </div>
                 </div>
                 </div>
@@ -112,7 +135,7 @@
 <!-- Menu -->
 
 
-            <div class="restaurant_menu" id="menu">
+            <div class="restaurant_menu" id="restaurant_menu">
                 <div class="container restaurant_menu_container">
                     <div class="menu_collumn">
                         <div class="menu_section">
@@ -337,7 +360,7 @@
 <!-- Reservation -->
 
 
-                <div class="reservation">
+                <div class="reservation" id="reservation">
                     <div class="container reservation_container">
                         <div class="reservation_image">
                             <img src="img/reserv1.png" alt="reserv1">
@@ -354,16 +377,41 @@
                             <p>Delicious Lambda cakes,  muffins, and gourmet coffees make us
                                 hard to resist! Stop in today and check us out! Perfect materials
                                 and freshly baked food.</p>
-                        </div>
-                    </div>         
-                </div>
-
-
-<!-- Functions -->
-
-
-                <div class="functions">
-                    <div class="container functions_container">                                           
+                            <form>
+                                <div class="form-row">
+                                    <div class="form_col">
+                                        <label for="inputname">Name</label><br>
+                                        <input type="name" class="form-control" id="inputname" placeholder="your name*">
+                                    </div>
+                                    <div class="form_col">
+                                        <label for="inputemail">Email</label><br>
+                                        <input type="email" class="form-control" id="inputemail" placeholder="your email*">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form_col">
+                                        <label for="datepicker1">Date</label><br>
+                                        <input type="text" class="form-control" id="datepicker1" placeholder="date*">
+                                        <i class="icon-calendar"></i>
+                                    </div>
+                                    <div class="form_col">
+                                        <label for="inputPartynumber">Party number</label><br>
+                                        <select type="text" id="inputPartynumber"><i class="fas fa-angle-down"></i>
+                                            <option selected>party number</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn_btn-primary">Book now!</button>
+                            </form>
+                        </div>   
                     </div>         
                 </div>
 
@@ -371,9 +419,51 @@
 <!-- Footer -->
 
 
-            <div class="footer">
-                <div class="container footer_container">
+                <div class="footer">
+                    <div class="container footer_container">
+                        <div class="footer_coll">
+                            <h2>About Us</h2>
+                            <div class="footer_decor">
+                                <img src="img/footerdecor.png" alt="decor">
+                            </div>
+                            <p>Lambda's new and expanded Chelsea location
+                                represents a truly authentic Greek patisserie,
+                                featuring breakfasts of fresh croissants and
+                                steaming bowls of café.<br>
+                                Lamda the best restaurant in town
+                            </p>
+                        </div>
+                        <div class="footer_coll">
+                            <h2>Opening Hours</h2>
+                            <div class="footer_decor">
+                                <img src="img/footerdecor.png" alt="decor">
+                            </div>
+                            <p><span>Mon-Thu:</span> 7:00am-8:00pm<br>
+                               <span>Fri-Sun:</span> 7:00am-10:00pm
+                            </p>
+                            <div class="container_credit_cards">
+                                <i class="fab fa-cc-amex"></i>
+                                <i class="fab fa-cc-paypal"></i>
+                                <i class="fab fa-cc-visa"></i>
+                                <i class="fab fa-cc-discover"></i>
+                            </div>
+                        </div>
+                        <div class="footer_coll">
+                            <h2>Our Location</h2>
+                            <div class="footer_decor">
+                                <img src="img/footerdecor.png" alt="decor">
+                            </div>
+                            <p><a href="https://www.google.com/maps" target="_blank">
+                                19th Paradise Street Sitia<br>
+                                128 Meserole Avenue</a></p>
+                            <div class="container_credit_cards">
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="icon-youtube"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fas fa-columns"></i>
+                            </div>
+                        </div>                                                                                  
+                    </div>         
                 </div>
-            </div>
         </body>
     </html>

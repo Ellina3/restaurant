@@ -22,6 +22,24 @@
     src: url('fonts/Georgia-Regular.woff');
 }
 
+@font-face {
+    font-family: 'OpenSans Bold';
+    src: url('fonts/OpenSans-Bold.ttf');
+    src: url('fonts/OpenSans-Bold.woff');
+}
+
+@font-face {
+    font-family: 'OpenSans Italic';
+    src: url('fonts/OpenSans-Italic.ttf');
+    src: url('fonts/OpenSans-Italic.woff');
+}
+
+@font-face {
+    font-family: 'OpenSans Regular';
+    src: url('fonts/OpenSans-Regular.ttf');
+    src: url('fonts/OpenSans-Regular.woff');
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -49,6 +67,18 @@
     width: 31%;
     padding-top: 40px;
     padding-bottom: 35px;
+}
+
+.icon-menu{
+    display: none;
+}
+
+.icon-close{
+    display: none;
+}
+
+.mobile_tablet_menu{
+    display: none;
 }
 
 .navigation{
@@ -441,4 +471,321 @@ ul.menu li a{
 .reservation_table p:nth-child(2n){
     width: 94%;
     padding-bottom: 40px;
+}
+
+.form-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_col{
+    width: 45%;
+}
+
+.form_col label{
+    font-size: 14px;
+    font-family: "OpenSans Bold";
+    color: rgb(201, 161, 49);
+    text-align: left;
+}
+
+.form-control, select{
+    width: 100%;
+    margin: 5px 0px 25px;
+    padding-left: 15px;
+    line-height: 35px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgb(200, 198, 198);
+    font-size: 16px;
+    font-family: "OpenSans Italic";
+    color: rgb(124, 124, 124);
+    text-align: left;
+    position: relative;
+}
+
+.form_col select{
+    color: rgba(124, 124, 124, 0.6);
+    width: 108%;
+    padding: 6px 15px 5px;
+    background-image: url(img/icon.png);
+    background-position: center;
+    background-position-x: 180px;
+    background-repeat: no-repeat;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 0.01px; 
+    text-overflow: '';
+    -ms-appearance: none;
+    appearance: none!important;
+}
+
+
+.form_col select::-ms-expand {
+    display: none;
+}
+
+.form-control:focus{
+    border: 1px solid rgb(200, 159, 45);
+}
+
+.icon-calendar{
+    position: absolute;
+    margin-top: -52px;
+    margin-left: 175px;
+    color: rgb(124, 124, 124);
+    cursor: pointer;
+}
+
+.btn_btn-primary{
+    width: 46%;
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: "OpenSans Regular";
+    color: rgb(255, 255, 255);
+    line-height: 40px;
+    text-align: center;
+    background-color: rgb(201, 161, 49);
+    border: none;
+    cursor: pointer;
+}
+
+.btn_btn-primary:hover{
+    background-color: rgba(201, 161, 49, 0.9);
+}
+
+.footer{
+    background-color: #191919;
+}
+
+.footer_container{
+    padding: 50px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_coll{
+    width: 31%;
+}
+
+.footer_decor{
+    width: 56%;
+    margin: 0 auto;
+}
+
+.footer_coll h2{
+    font-size: 21px;
+    font-family: "YesevaOne";
+    color: rgb(254, 254, 254);
+    text-align: center;
+    line-height: 40px;
+}
+
+.footer_coll p{
+    padding-top: 20px;
+    font-size: 14px;
+    font-family: "OpenSans Regular";
+    color: rgb(255, 255, 255);
+    line-height: 25px;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer_coll a{
+    padding-top: 20px;
+    font-size: 14px;
+    font-family: "OpenSans Bold";
+    color: rgb(255, 255, 255);
+    line-height: 25px;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.footer_coll p span{
+    font-size: 15px;
+    font-family: "OpenSans Bold";
+}
+
+.container_credit_cards{
+    display: flex;
+    justify-content: space-between;
+    width: 33%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.container_credit_cards i{
+    color: white;
+    cursor: pointer;
+}
+
+.container_credit_cards i:hover{
+    font-size: 25px;
+}
+
+@media (max-width: 768px) {
+    .container{
+        width: 94%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .icon-menu{
+        display: block;
+        left:50%; 
+        margin-left:-25px;
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        border: none;
+        border-radius: 0 0 50% 50% / 0 0 100% 100%;
+        background-color: rgb(218, 179, 62);
+        cursor: pointer;
+    }
+
+    .icon-menu:hover{
+        background-color: rgba(218, 179, 62, 0.9);
+        box-shadow: 6px 6px 35px 0px rgba(0,0,0,0.75);
+    }
+
+    .icon-menu i{
+        position: absolute;
+        color: white;
+        margin-top: -5px;
+        margin-left: 15px;
+        font-size: 30px;
+    }
+
+    .socialicons {
+        width: 15%;
+    }
+
+    .navigation{
+        display: none;
+    }
+
+    .mobile_tablet_menu{
+        background: url("img/mobilebg.jpg") no-repeat center center;
+        background-size: cover;
+        width: 100%;
+        position: fixed;
+        left: 0px;
+        display: block;
+        top: -118px;
+        height: 118px;
+    }
+
+    ul.menu li {
+        padding-bottom: 30px;
+    }
+
+    .icon-close {
+        display: block;
+        margin: 0 auto;
+        cursor: pointer;
+        width: 50px;
+        height: 25px;
+        border: none;
+        border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+        background-color: rgb(218, 179, 62);
+    }
+
+    .icon-close i{
+        position: absolute;
+        color: white;
+        margin-top: 0px;
+        margin-left: 15px;
+        font-size: 30px;
+    }
+
+    .content {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .content h2 {
+        font-size: 55px;
+        line-height: 90px;
+    }
+    .decor {
+        width: 38%;
+    }
+    .content_buttons {
+        width: 79%;
+    }
+    .about_container {
+        padding-bottom: 50px;
+    }
+    .about_column:first-child {
+        width: 50%;
+        padding-left: 70px;
+    }
+    .about .decor {
+        width: 100%;
+    }
+    .about_column p {
+        font-size: 14px;
+    }
+    .ingredient_info {
+        margin-left: 50%;
+        width: 50%;
+    }
+    .ingredient_info .confirm {
+        width: 80%;
+    }
+    .ingredient_info p {
+        width: 96%;
+    }
+    .restaurant_menu_container {
+        display: block;
+    }
+    .menu_collumn {
+        width: 67%;
+        margin: 0 auto;
+    }
+    .menu_collumn:first-child {
+        padding-left: 0px;
+    }
+    .menu_collumn:nth-child(2n) {
+        padding-right: 0px;
+    }
+    .review {
+        width: 80%;
+    }
+    .review_decor {
+        width: 50%;
+    }
+    .review_comment p {
+        font-size: 20px;
+        line-height: 40px;
+        width: 78%;
+    }
+    .reservation_image {
+        display: none;
+    }
+    .reservation_table {
+        width: 65%;
+        padding-right: 0px;
+        margin: 0 auto;
+    }
+    .footer_coll {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+    .footer_container {
+        display: block;
+        padding-bottom: 0px;
+    }
+    .footer_decor {
+        width: 30%;
+    }
+    .container_credit_cards {
+        width: 20%;
+        padding-top: 30px;
+        height: 30px; 
+    }
+
 }
