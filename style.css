@@ -503,6 +503,13 @@ ul.menu li a{
     position: relative;
 }
 
+.calendar input{
+    background-image: url(img/calendar.png);
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
 .form_col select{
     color: rgba(124, 124, 124, 0.6);
     width: 108%;
@@ -517,6 +524,7 @@ ul.menu li a{
     text-overflow: '';
     -ms-appearance: none;
     appearance: none!important;
+    cursor: pointer;
 }
 
 
@@ -526,14 +534,6 @@ ul.menu li a{
 
 .form-control:focus{
     border: 1px solid rgb(200, 159, 45);
-}
-
-.icon-calendar{
-    position: absolute;
-    margin-top: -52px;
-    margin-left: 175px;
-    color: rgb(124, 124, 124);
-    cursor: pointer;
 }
 
 .btn_btn-primary{
@@ -743,7 +743,7 @@ ul.menu li a{
         display: block;
     }
     .menu_collumn {
-        width: 67%;
+        width: 58%;
         margin: 0 auto;
     }
     .menu_collumn:first-child {
@@ -771,6 +771,9 @@ ul.menu li a{
         padding-right: 0px;
         margin: 0 auto;
     }
+    .form_col select {
+        background-position-x: 205px;
+    }
     .footer_coll {
         width: 100%;
         padding-bottom: 40px;
@@ -786,6 +789,72 @@ ul.menu li a{
         width: 20%;
         padding-top: 30px;
         height: 30px; 
+    }
+}
+@media (max-width: 480px) {
+    ul.menu li {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+    .content h2 {
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .decor {
+        width: 50%;
+    }
+    .content_buttons {
+        width: 95%;
+    }
+    .content_buttons a {
+        width: 200px;
+    }
+    .about_column:first-child {
+        width: 80%;
+        padding-left: 40px;
+    }
+    .about .decor {
+        width: 66%;
+    }
+    .about_column:nth-child(2n) {
+        display: none;
+    }
+    .ingredient_info {
+        margin-left: 0;
+        width: 97%;
+    }
+    .ingredient_info .confirm {
+        width: 57%;
+    }
+    .menu_collumn {
+        width: 93%;
+        margin: 0 auto;
+    }
+    .review {
+        padding: 50px 0px ;
+    }
+    .review_decor {
+        width: 70%;
+    }
+    .review_comment p {
+        font-size: 16px;
+        line-height: 35px;
+        width: 90%;
+    }
+    .review h2 {
+        font-size: 35px;
+    }
+    .reservation_container {
+        padding: 50px 0px;
+    }
+    .reservation_table {
+        width: 93%;
+    }
+    .form_col select {
+        background-position-x: 185px;
+    }
+    .footer_decor {
+        width: 45%;
     }
 
 }
